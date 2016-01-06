@@ -20,7 +20,7 @@
   <artifactId>build-resources</artifactId>
   <packaging>jar</packaging>
   <name>Build Resources</name>
-  <version>1.4.4-SNAPSHOT</version>
+  <version>1.4.4</version>
   <description>Parent pom for com.groupon.api projects</description>
   <url>https://github.com/groupon/api-build-resources</url>
 
@@ -101,7 +101,7 @@
     <connection>scm:git:git@github.com:groupon/api-build-resources.git</connection>
     <developerConnection>scm:git:git@github.com:groupon/api-build-resources.git</developerConnection>
     <url>https://github.com/groupon/api-build-resources</url>
-    <tag>HEAD</tag>
+    <tag>build-resources-1.4.4</tag>
   </scm>
 
   <properties>
