@@ -21,6 +21,8 @@
   <packaging>jar</packaging>
   <name>Build Resources</name>
   <version>1.4.4-SNAPSHOT</version>
+  <description>Parent pom for com.groupon.api projects</description>
+  <url>https://github.com/groupon/api-build-resources</url>
 
   <licenses>
     <license>
