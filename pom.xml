@@ -20,7 +20,7 @@
   <artifactId>build-resources</artifactId>
   <packaging>jar</packaging>
   <name>Build Resources</name>
-  <version>1.4.2</version>
+  <version>1.4.3-SNAPSHOT</version>
 
   <licenses>
     <license>
@@ -99,7 +99,7 @@
     <connection>scm:git:git@github.com:groupon/api-build-resources.git</connection>
     <developerConnection>scm:git:git@github.com:groupon/api-build-resources.git</developerConnection>
     <url>https://github.com/groupon/api-build-resources</url>
-    <tag>build-resources-1.4.2</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <properties>
