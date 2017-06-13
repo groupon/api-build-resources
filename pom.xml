@@ -18,7 +18,7 @@
   <parent>
     <groupId>com.groupon.api</groupId>
     <artifactId>api-parent-pom</artifactId>
-    <version>1.0.11</version>
+    <version>1.1.1</version>
     <relativePath/>
   </parent>
 
@@ -27,9 +27,9 @@
   <artifactId>build-resources</artifactId>
   <packaging>jar</packaging>
   <name>Build Resources</name>
-  <version>1.4.5-SNAPSHOT</version>
   <description>Build resources for com.groupon.api projects</description>
   <url>https://github.com/groupon/api-build-resources</url>
+  <version>1.4.5-SNAPSHOT</version>
 
   <licenses>
     <license>

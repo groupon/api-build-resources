@@ -8,9 +8,8 @@ install: true
 before_script:
 - gpg --import groupon-api.key
 script:
-- mvn clean install --settings settings.xml -P ci-strict -Dgpg.skip=true -U
-- if [ \( -n "${TRAVIS_TAG}" \) -a "${TRAVIS_PULL_REQUEST}" = "false" ]; then mvn
-  deploy --settings settings.xml -P ci-strict; fi;
+- mvn clean install --settings settings.xml -P ci,release -Dgpg.skip=true -U
+- if [ \( -n "${TRAVIS_TAG}" \) -a "${TRAVIS_PULL_REQUEST}" = "false" ]; then mvn deploy --settings settings.xml -P ci,release; fi;
 env:
   global:
   - secure: berSRdPBg14HmniOh90TUvMNgec60kDOorQZTX+Ci3V2tN1Ejoeccmf48DPWblUdIur8HfAmPKvdLCZHvZt8ez47Gshum9y5oa6cmqKma8bXVoJ9AkFwEOVRXt8mruMQbjiz79RVLK7+pZ6SOhLQ80c7EytTpxGcvNiauo08QosysqcMc8aDpbCjQbVYXCY3eiLwW4W/DmnIYMp4xZ0+yJyzC4W09vuk+4GnjLqjiFh+IpjCZRm0CEexdL5iagfuPj0UfHfkb8Xe1qjMcyGA8X44GDCGf7eqGHJWp6ir9KJ3O2Y5essSUdHdncUXakHC1GeeFPm38huaAuqT8mni7CWff5zSN33mpyyiCzk3ZXNViIhJBSpOJPIwPPFZCr6STUsmkOKoignDDQEXw2VoGQP/Yn+EQLI7uu1xIanPCaMinICgWUZMC+m7DmlA46ks8xZnCKSa8dVSXettiwqTeSlY+FMwDSXhQq8OQ68C/0HnAg/x9kt2Ako/UQNK6D9vG/9BGGu1fai5OU1wJMzxX6fW/1w5f6TohW70x54NQmFurZYZw/Lg1ldyMkCQz8N7taQZDz5mz5h57PUqxaPHVCZsDprlcwvulCCO9aT1azp5bqDjwrLMKDaCRtzNKu9yRFoObdK3Vx0nLuB83j0V+fuOnj80mw60Ao7RRu8YjEQ=
