@@ -141,12 +141,6 @@
             <!--     value="${basedir}/java.header"/>                   -->
         <!-- </module> -->
 
-        <!-- Require javadoc header -->
-        <!--<module name="Regexp">-->
-            <!--<property name="format" value="^\/\*\*$\n^\s\*\s.+$\n(^\s\*.*$\n)*^\s\*\s\@author\s[-\w().@\s]+$\n(?:^\s\*\s@(?!since).*$\n)*^\s\*\s\@since\s.+$\n(^\s\*\s.+$\n)*^\s\*\/$\n"/>-->
-            <!--<property name="message" value="Javadoc header not correctly formatted. Please ensure the second line contains a description, optionally followed by more descriptive lines, then an @author line and a @since line, then additional doc lines and finally a closing \s*/" />-->
-        <!--</module>-->
-
         <!-- Prevent /** Text comments -->
         <module name="Regexp">
             <property name="format" value="\/\*\*\s*\w+"/>
