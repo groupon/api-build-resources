@@ -271,7 +271,6 @@
         <module name="ModifiedControlVariable"/>
         <module name="StringLiteralEquality"/>
         <module name="UnnecessaryParentheses"/>
-        <module name="FileContentsHolder"/>
         <module name="SuppressWarningsHolder"/>
     </module>
 
@@ -279,7 +278,7 @@
         <property name="file" value="${suppressions.file}"/>
     </module>
 
-    <module name="SuppressionCommentFilter">
+    <module name="SuppressWithPlainTextCommentFilter">
         <property name="offCommentFormat" value="CS\.OFF\: ([\w|]+)"/>
         <property name="onCommentFormat" value="CS\.ON\: ([\w|]+)"/>
         <property name="checkFormat" value="$1"/>
